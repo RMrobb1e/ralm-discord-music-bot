@@ -235,7 +235,6 @@ client.on("interactionCreate", async (interaction) => {
   } else if (interaction.commandName === "skip") {
     await interaction.deferReply();
     const queue = player.queues;
-    // const queue = player.getQueue(interaction.guildId);
     if (!queue?.cache)
       return void interaction.followUp({
         content: "❌ | No music is being played!",
