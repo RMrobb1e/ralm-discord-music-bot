@@ -10,7 +10,6 @@ const {
   useQueue,
   useMainPlayer,
 } = require("discord-player");
-const config = require("./config.json");
 
 const client = new Client({
   intents: [
